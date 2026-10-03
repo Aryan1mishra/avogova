@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ========================================
+   Avegenx BRAND COLORS
+   ======================================== */
+
+:root {
+  --navy: #0d173b;
+  --sky-blue: #4ab7e0;
+  --yellow: #e2d64b;
+
+  --sky-blue-light: #eaf7fc;
+  --navy-light: #17234d;
+  --yellow-light: #f1eca0;
+
+  font-family: 'DM Sans', sans-serif;
+  color: var(--navy);
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* ========================================
+   GLOBAL
+   ======================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f7fbfd;
+  color: var(--navy);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ========================================
+   TEXT SELECTION
+   ======================================== */
+
+::selection {
+  background: var(--yellow);
+  color: var(--navy);
+}
+
+/* ========================================
+   BRAND COLORS
+   ======================================== */
+
+.text-brand {
+  color: var(--navy);
+}
+
+.text-sky {
+  color: var(--sky-blue);
+}
+
+.text-yellow {
+  color: var(--yellow);
+}
+
+.bg-brand {
+  background-color: var(--navy);
+}
+
+.bg-sky {
+  background-color: var(--sky-blue);
+}
+
+.bg-yellow {
+  background-color: var(--yellow);
+}
+
+.bg-sky-light {
+  background-color: var(--sky-blue-light);
+}
+
+.border-brand {
+  border-color: var(--navy);
+}
+
+.border-sky {
+  border-color: var(--sky-blue);
+}
+
+.border-yellow {
+  border-color: var(--yellow);
+}
+
+/* ========================================
+   GRID BACKGROUND
+   ======================================== */
+
+.bg-grid {
+  background-image:
+    linear-gradient(
+      rgba(13, 23, 59, 0.06) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(13, 23, 59, 0.06) 1px,
+      transparent 1px
+    );
+
+  background-size: 44px 44px;
+}
+
+/* Dark grid */
+.bg-grid-dark {
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.07) 1px,
+      transparent 1px
+    );
+
+  background-size: 44px 44px;
+}
+
+/* ========================================
+   SCROLLBAR
+   ======================================== */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+/* ========================================
+   LINKS & BUTTONS
+   ======================================== */
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ========================================
+   BRAND BUTTON
+   ======================================== */
+
+.btn-brand {
+  background: var(--yellow);
+  color: var(--navy);
+}
+
+.btn-brand:hover {
+  background: #eee35f;
+}
+
+/* ========================================
+   BRAND GLOW
+   ======================================== */
+
+.glow-sky {
+  box-shadow:
+    0 0 40px rgba(74, 183, 224, 0.25);
+}
+
+.glow-yellow {
+  box-shadow:
+    0 0 40px rgba(226, 214, 75, 0.25);
+}
+
+/* ========================================
+   GRADIENTS
+   ======================================== */
+
+.bg-brand-gradient {
+  background: linear-gradient(
+    135deg,
+    #0d173b 0%,
+    #172b5c 55%,
+    #4ab7e0 140%
+  );
+}
+
+.text-brand-gradient {
+  background: linear-gradient(
+    90deg,
+    #4ab7e0,
+    #e2d64b
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========================================
+   SMOOTH TRANSITIONS
+   ======================================== */
+
+button,
+a {
+  transition:
+    color 200ms ease,
+    background-color 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}

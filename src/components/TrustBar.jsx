@@ -1,0 +1,3 @@
+import { motion } from 'framer-motion'
+const brands=['CAPGEMINI','COGNIZANT','HCLTECH','ORACLE','ADOBE','NVIDIA','DELL','MICROSOFT','TCS','INFOSYS','WIPRO','IBM','INTEL','QUALCOMM','VMWARE']
+export default function TrustBar(){return <section className="overflow-hidden border-b border-slate-200 bg-[#0d173b] py-7"><p className="text-center text-[10px] font-bold uppercase tracking-[.25em] text-[#4ab7e0]">Technology ecosystem</p><motion.div animate={{x:[0,-70,0]}} transition={{duration:18,repeat:Infinity,ease:'easeInOut'}} className="mt-5 flex min-w-max items-center justify-center gap-14 px-5 sm:gap-20">{brands.map(x=><span key={x} className="font-display text-sm font-extrabold tracking-tight text-[#4ab7e0] sm:text-lg">{x}</span>)}</motion.div></section>}
